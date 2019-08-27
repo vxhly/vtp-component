@@ -1,0 +1,8 @@
+*.js
+.browserslistrc
+.editorconfig
+build/
+docs/
+scripts/
+test/
+public/
