@@ -55,6 +55,7 @@ function setDocsConfig () {
   })
   const content = `const config = {
   dest: 'public',
+  plugins: ['vue-demo'],
   serviceWorker: true,
   themeConfig: {
     sidebar: [

@@ -1,5 +1,6 @@
 const config = {
   dest: 'public',
+  plugins: ['vue-demo'],
   serviceWorker: true,
   themeConfig: {
     sidebar: [

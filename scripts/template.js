@@ -57,13 +57,13 @@ ${compoenntName}
 
 ## Code Demo
 
-<div class="m-tb20">
-  <${config.prefix}-${compoenntName}></${config.prefix}-${compoenntName}>
-</div>
+::: demo 基础用法
 
 \`\`\` vue
 <${config.prefix}-${compoenntName}></${config.prefix}-${compoenntName}>
 \`\`\` 
+
+:::
 
 ## Used
 
@@ -74,6 +74,7 @@ import Vue from 'vue'
 import {
   ${upperPrefix}${upperCompoenntName}
 } from '${config.prefix}'
+import 'eh-ui/packages/${upperCompoenntName}/${compoenntName}.css'
 
 Vue.use(${upperPrefix}${upperCompoenntName})
 \`\`\` 
@@ -84,6 +85,7 @@ Vue.use(${upperPrefix}${upperCompoenntName})
 import {
   ${upperPrefix}${upperCompoenntName}
 } from '${config.prefix}'
+import 'eh-ui/packages/${upperCompoenntName}/${compoenntName}.css'
 
 export default {
   components: {
