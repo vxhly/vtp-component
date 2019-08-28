@@ -73,7 +73,7 @@ ${compoenntName}
 import Vue from 'vue'
 import {
   ${upperPrefix}${upperCompoenntName}
-} from 'vtp'
+} from '${config.prefix}'
 
 Vue.use(${upperPrefix}${upperCompoenntName})
 \`\`\` 
@@ -83,7 +83,7 @@ Vue.use(${upperPrefix}${upperCompoenntName})
 \`\`\`  javascript
 import {
   ${upperPrefix}${upperCompoenntName}
-} from 'vtp'
+} from '${config.prefix}'
 
 export default {
   components: {
