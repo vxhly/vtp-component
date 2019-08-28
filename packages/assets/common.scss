@@ -1,115 +1,122 @@
-@for $i from 1 through 30 {
-  .fs#{$i} {
+$prefix: 'eh';
+
+@for $i from 12 through 48 {
+  .#{$prefix}-fs#{$i} {
     font-size: #{$i}px !important;
   }
 
-  .br#{$i} {
-    border-radius: #{$i}px !important;
-  }
 
-  .l-h#{$i} {
+  .#{$prefix}-lh#{$i} {
     line-height: #{$i}px !important;
   }
 }
 
-@for $i from 1 through 40 {
-  .margin#{$i} {
+@for $i from 5 through 40 {
+  .#{$prefix}-margin#{$i} {
     margin:#{$i}px !important;
   }
 
-  .padding#{$i} {
+  .#{$prefix}-padding#{$i} {
     padding:#{$i}px !important;
   }
 
-  .m-l#{$i} {
+  .#{$prefix}-m-l#{$i} {
     margin-left: #{$i}px !important;
   }
 
-  .m-r#{$i} {
+  .#{$prefix}-m-r#{$i} {
     margin-right: #{$i}px !important;
   }
 
-  .m-lr#{$i} {
+  .#{$prefix}-m-lr#{$i} {
     margin-left: #{$i}px !important;
     margin-right: #{$i}px !important;
   }
 
-  .m-t#{$i} {
+  .#{$prefix}-m-t#{$i} {
     margin-top: #{$i}px !important;
   }
 
-  .m-b#{$i} {
+  .#{$prefix}-m-b#{$i} {
     margin-bottom: #{$i}px !important;
   }
 
-  .m-tb#{$i} {
+  .#{$prefix}-m-tb#{$i} {
     margin-top: #{$i}px !important;
     margin-bottom: #{$i}px !important;
   }
 
-  .p-l#{$i} {
+  .#{$prefix}-p-l#{$i} {
     padding-left: #{$i}px !important;
   }
 
-  .p-r#{$i} {
+  .#{$prefix}-p-r#{$i} {
     padding-right: #{$i}px !important;
   }
 
-  .p-lf#{$i} {
+  .#{$prefix}-p-lf#{$i} {
     padding-left: #{$i}px !important;
     padding-right: #{$i}px !important;
   }
 
-  .p-t#{$i} {
+  .#{$prefix}-p-t#{$i} {
     padding-top: #{$i}px !important;
   }
 
-  .p-b#{$i} {
+  .#{$prefix}-p-b#{$i} {
     padding-bottom: #{$i}px !important;
   }
 
-  .p-tb#{$i} {
+  .#{$prefix}-p-tb#{$i} {
     padding-top: #{$i}px !important;
     padding-bottom: #{$i}px !important;
   }
 }
 
-.tc {
+.#{$prefix}-tc {
   text-align: center !important;
 }
 
-.tl {
+.#{$prefix}-tl {
   text-align: left !important;
 }
 
-.tr {
+.#{$prefix}-tr {
   text-align: right !important;
 }
 
-.fl {
+.#{$prefix}-fl {
   float: left !important;
 }
 
-.fr {
+.#{$prefix}-fr {
   float: riaght !important;
 }
 
-.cl-both {
+.#{$prefix}-cl-both {
   clear: both !important;
 }
 
-.fw-b {
+.#{$prefix}-fw-b {
   font-weight: bold !important;
 }
 
-.absolute {
+.#{$prefix}-absolute {
   position: absolute !important;
 }
 
-.relative {
+.#{$prefix}-relative {
   position: relative !important;
 }
 
-.fixed {
+.#{$prefix}-fixed {
   position: fixed !important;
+}
+
+.#{$prefix}-flex {
+  display: flex;
+}
+
+.#{$prefix}-f-sc {
+  align-self: center;
 }
