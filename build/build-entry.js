@@ -16,8 +16,7 @@ function buildPackagesEntry () {
   const intallList = exportList.filter(
     name => !~uninstallComponents.indexOf(uppercamelize(name))
   )
-  const content = `import './assets/scss/common.scss'
-${config.ElementUI ? `import 'element-ui/lib/theme-chalk/index.css'` : '\n'}
+  const content = `import './assets/common.scss'
 import './utils/filters'
 
 ${importList.join('\n')}
@@ -52,7 +51,7 @@ export default {
 function setDocsConfig () {
   const docsURL = []
   Components.forEach(item => {
-    docsURL.push(`'/${item}'`)
+    docsURL.push(`'/component/${item}'`)
   })
   const content = `const config = {
   dest: 'public',

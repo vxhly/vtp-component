@@ -2,11 +2,9 @@ import './assets/scss/common.scss'
 import 'element-ui/lib/theme-chalk/index.css'
 import './utils/filters'
 
-
-
 const version = require('../package.json').version
 const components = [
-  
+
 ]
 
 const install = Vue => {
@@ -16,8 +14,8 @@ const install = Vue => {
 
 export {
   install,
-  version,
-  
+  version
+
 }
 
 export default {

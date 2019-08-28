@@ -12,6 +12,7 @@
     "changelog": "conventional-changelog -p angular -i docs/CHANGELOG.md -s -r 0"
   },
   "main": "lib/vtp-component.common.js",
+  "style": "lib/vtp-component.css",
   "dependencies": {
     "core-js": "^2.6.5",
     "element-ui": "^2.11.1",

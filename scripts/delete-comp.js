@@ -17,7 +17,7 @@ process.stdin.on('data', async chunk => {
 
   const hasComponentDirectory = fs.existsSync(componentDirectory)
 
-  const docsDirectory = resolve('../docs')
+  const docsDirectory = resolve('../docs/component')
   const docsMdName = resolve(docsDirectory, `${inputName}.md`)
   if (inputName) {
     if (hasComponentDirectory) {

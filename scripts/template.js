@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import './${config.prefix}-${compoenntName}';
+  @import './${compoenntName}';
 </style>
 `
   },

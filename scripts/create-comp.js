@@ -14,7 +14,6 @@ const {
   scssTemplate,
   mdDocs
 } = require('./template')
-const config = require('../config')
 
 const generateFile = (path, data) => {
   if (fs.existsSync(path)) {
@@ -41,7 +40,7 @@ process.stdin.on('data', async chunk => {
   const upperInputname = uppercamelize(inputName)
   const componentDirectory = resolve('../packages', upperInputname)
   const componentVueName = resolve(componentDirectory, `${upperInputname}.vue`)
-  const scssName = resolve(componentDirectory, `${config.prefix}-${inputName}.scss`)
+  const scssName = resolve(componentDirectory, `${inputName}.scss`)
   const entryComponentName = resolve(componentDirectory, 'index.js')
 
   const hasComponentDirectory = fs.existsSync(componentDirectory)
@@ -77,7 +76,7 @@ process.stdin.on('data', async chunk => {
   }
 
   // 这里生成自定义组件说明文档
-  const docsDirectory = resolve('../docs')
+  const docsDirectory = resolve('../docs/component')
   const docsMdName = resolve(docsDirectory, `${upperInputname}.md`)
 
   try {
