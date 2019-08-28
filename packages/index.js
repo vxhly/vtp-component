@@ -1,5 +1,4 @@
-import './assets/scss/common.scss'
-import 'element-ui/lib/theme-chalk/index.css'
+import './assets/common.scss'
 import './utils/filters'
 
 const version = require('../package.json').version
