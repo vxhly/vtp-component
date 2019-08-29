@@ -57,10 +57,14 @@ ${compoenntName}
 
 ## Code Demo
 
+### 基础用法
+
 ::: demo 基础用法
 
 \`\`\` vue
-<${config.prefix}-${compoenntName}></${config.prefix}-${compoenntName}>
+<template>
+  <${config.prefix}-${compoenntName}></${config.prefix}-${compoenntName}>
+</template>
 \`\`\` 
 
 :::
@@ -73,8 +77,8 @@ ${compoenntName}
 import Vue from 'vue'
 import {
   ${upperPrefix}${upperCompoenntName}
-} from '${config.prefix}'
-import 'eh-ui/packages/${upperCompoenntName}/${compoenntName}.css'
+} from '${config.name}'
+import '${config.name}/packages/${upperCompoenntName}/${compoenntName}.css'
 
 Vue.use(${upperPrefix}${upperCompoenntName})
 \`\`\` 
@@ -84,8 +88,8 @@ Vue.use(${upperPrefix}${upperCompoenntName})
 \`\`\`  javascript
 import {
   ${upperPrefix}${upperCompoenntName}
-} from '${config.prefix}'
-import 'eh-ui/packages/${upperCompoenntName}/${compoenntName}.css'
+} from '${config.name}'
+import '${config.name}/packages/${upperCompoenntName}/${compoenntName}.css'
 
 export default {
   components: {
