@@ -1,6 +1,6 @@
 const config = {
   dest: 'public',
-  plugins: ['vue-demo'],
+  plugins: ['vue-demo', require('./plugins/clipboard-copy')],
   serviceWorker: true,
   themeConfig: {
     sidebar: [

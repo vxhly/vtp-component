@@ -55,12 +55,23 @@ function setDocsConfig () {
   })
   const content = `const config = {
   dest: 'public',
-  plugins: ['vue-demo'],
+  plugins: [
+    'vue-demo',
+    require('./plugins/clipboard-copy'),
+    ['copyright', {
+      noCopy: true, // the selected text will be uncopiable
+      // disable the plugin by default
+      // you can activate the plugin in frontmatter
+      disabled: false,
+      // texts will be unselectable
+      noSelect: true
+    }]
+  ],
   serviceWorker: true,
   themeConfig: {
     sidebar: [
       ['/CHANGELOG', '更新日志'],
-      ['/', '指南'], 
+      ['/', '指南'],
       {
         title: '组件',
         collapsable: false,

@@ -30,5 +30,10 @@ import { VtpButton } from 'vtp'
 Vue.use(VtpButton)
 ```
 
-## 组件库贡献指南
+## 运行文档说明
 
+``` bash
+npm i -g vuepress
+npm run docs:dev
+# 编译文档可使用 npm run docs:build
+```
