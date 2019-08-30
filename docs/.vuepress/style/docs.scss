@@ -1,0 +1,12 @@
+.demo-block {
+  margin: 20px auto;
+
+  .demo-block-control.is-fixed {
+    position: static !important;
+    left: 0;
+  }
+}
+
+.theme-default-content:not(.custom) {
+  max-width: 1024px !important;
+}
