@@ -11,17 +11,17 @@ import Vue from 'vue'
  */
 Vue.filter('digitUppercase', (value) => {
   if (Number(value)) {
-    let fraction = ['角', '分']
-    let digit = [
+    const fraction = ['角', '分']
+    const digit = [
       '零', '壹', '贰', '叁', '肆',
       '伍', '陆', '柒', '捌', '玖'
     ]
-    let unit = [
+    const unit = [
       ['元', '万', '亿'],
       ['', '拾', '佰', '仟']
     ]
 
-    let head = value < 0 ? '欠' : ''
+    const head = value < 0 ? '欠' : ''
     value = Math.abs(value)
     let s = ''
     for (let i = 0; i < fraction.length; i++) {

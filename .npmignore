@@ -6,3 +6,6 @@ docs/
 scripts/
 test/
 public/
+*.log
+*-lock.json
+*.lock
